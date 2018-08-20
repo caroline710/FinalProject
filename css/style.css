@@ -19,6 +19,7 @@ body, html{
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 
+
 }
 
 /* Style the links inside the navigation bar */
@@ -52,6 +53,7 @@ body, html{
 	top: 60%; /*affects vertical position of navBar*/
 	margin-top: -215px;
 	text-align: center;
+  text-decoration: none;
 }
 
 .vertical-menu li{
@@ -171,6 +173,7 @@ body, html{
   font-size: 18px;
   line-height: 1em;
   cursor:pointer;
+  text-decoration: none !important;
 }
 /* style for names of fires  */
 .header{
@@ -181,6 +184,7 @@ body, html{
   color:#FFFFFF;
   font-size: 24px;
   letter-spacing: 5px;
+  text-decoration: none !important;
 }
 
 .header .border{
