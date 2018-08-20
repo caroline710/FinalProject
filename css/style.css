@@ -12,7 +12,7 @@ body, html{
 
 /* Add a black background color to the navigation bar */
 .topnav {
-    background-color: #333;
+    background-color: #000000;
     overflow: hidden;
     position: fixed; /*Set the navbar to a fixed position*/
     z-index: 100;
@@ -25,11 +25,12 @@ body, html{
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #FFFFFF;
     text-align: center;
-    padding: 14px 90px;
+    padding: 14px 85px;
     text-decoration: none;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 .topnav a:hover {
@@ -42,8 +43,54 @@ body, html{
     margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
+/* Vertical NavBar */
+.vertical-menu {
+  list-style: none;
+	display: block;
+	position: fixed;
+	z-index: 999;
+	top: 60%; /*affects vertical position of navBar*/
+	margin-top: -215px;
+	text-align: center;
+}
+
+.vertical-menu li{
+  left: 0px;
+	color: #E7E3E3;
+	display: block;
+	padding: 0 10px;
+	line-height:60px;
+	font-weight:800;
+	border-bottom:2px solid #000000;
+	text-align:left;
+	width:53px;
+	padding-left: 20px;
+	cursor:pointer;
+}
+
+/* .vertical-menu li.active{
+	font-size:16px;
+	width:100px!important;
+	line-height: 45px !important;
+} */
+
+/* Change font size when use hovers  */
+.vertical-menu li:hover{
+	padding-left: 24px;
+	font-size: 120%;
+}
+
+/* .navigation li.active:hover{
+} */
+
+/* .vertical-menu .noborder{
+	border: none !important;
+	padding-left: 27px;
+} */
+
+
 /* Create a Parallax Effect */
-.pimg1, .pimg2, .pimg3{
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
   position: relative;
   background-position: center;
   background-size: cover;
@@ -57,21 +104,42 @@ body, html{
   min-height: 100%;
 }
 .pimg2{
-  background-image:url('../img/img2.jpeg');
+  background-image:url('../img/TubbBefore.jpg');
   min-height: 100%;
 }
 
 .pimg3{
-  background-image:url('../img/img3.jpeg');
+  background-image:url('../img/TubbAfter.jpg');
+  min-height: 100%;
+}
+
+.pimg4{
+  background-image:url('../img/GreeceBefore.jpg');
+  min-height: 100%;
+}
+
+.pimg5{
+  background-image:url('../img/GreeceAfter.jpg');
   min-height: 100%;
 }
 
 .section{
   text-align: center;
-  padding: 50px 80px;
+  padding: 25px 100px;
 }
 
-.ptext{
+.section-light{
+  background-color: #FFFFFF;
+  color:#000000;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color:#FFFFFF;
+}
+
+/* style for the title on the home page */
+.home{
   position: absolute;
   top: 50%;
   width: 100%;
@@ -82,8 +150,57 @@ body, html{
   text-transform: uppercase;
 }
 
-.ptext .border{
+.home .border{
   background-color: #111;
   color: #fff;
   padding: 20px;
+}
+
+/* style join button */
+.join{
+  position: absolute;
+  top: 135px;
+  left: 43.5%;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  background-color: white;
+  border-style: solid;
+  border-width: medium;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 1em;
+  cursor:pointer;
+}
+/* style for names of fires  */
+.header{
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color:#FFFFFF;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.header .border{
+  background-color: #AE3A3A;
+  padding: 20px;
+}
+
+/* style before/after text */
+.diff{
+  position: absolute;
+  top: 10%;
+  width: 180%;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.diff .border2{
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  padding:10px;
 }
